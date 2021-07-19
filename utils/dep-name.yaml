@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <dep-name>
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: <dep-name>
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: <dep-name>
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+        - name: <dep-name>
+          image: <acrName>.azurecr.io/<myimage>:v1
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 250m
+            limits:
+              cpu: 500m
+          # env:
+          #   - name: APIAPP
+          #     value: "api-app"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: <dep-name>
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: <dep-name>
