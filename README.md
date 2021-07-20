@@ -9,4 +9,4 @@
 Here's a quick look :eyes: 
 
 <!-- ![](images/gif_capture.gif) -->
-<img src="images/gif_capture.gif" alt="gifcapture" width="1000">
+<img src="images/gif_capture.gif" alt="gifcapture" width="500">
