@@ -4,4 +4,4 @@
 
 # Hello there :wave: Welocome to kudle 
 
-** kudle ** is an application that helps you deploy docker containers directly on Azure Kubernetes Clusters from your Azure account via a graphical user interface. Kudle can be described in just two words, simple and fast :bulb: 
+**kudle** is an application that helps you deploy docker containers directly on Azure Kubernetes Clusters from your Azure account via a graphical user interface. Kudle can be described in just two words, simple and fast :bulb: 
