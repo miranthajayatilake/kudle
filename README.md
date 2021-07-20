@@ -1,1 +1,1 @@
-![Project logo](images/logo2.png)
+<img src="images/logo2.png" alt="Projectlogo" width="50" class="center"/>
