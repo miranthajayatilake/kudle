@@ -44,5 +44,4 @@ Here's a quick look :eyes:
 All good! Hit **Deploy** :relieved:
 *Information on the status will be displyed below the progress bar*
 
-When completed, expand **Check deployment status** section and hit **Get public IP**
-If deployed successfully, the public IP for your app will be displayed :clap: :clap: :clap:
+When completed, expand **Check deployment status** section and hit **Get public IP**. If deployed successfully, the public IP for your app will be displayed :clap: :clap: :clap:
