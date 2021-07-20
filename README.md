@@ -46,3 +46,9 @@ All good! Hit **Deploy** :relieved:
 *Information on the status will be displyed below the progress bar*
 
 When completed, expand **Check deployment status** section and hit **Get public IP**. If deployed successfully, the public IP for your app will be displayed :clap: :clap: :clap:
+
+## Contributing to kudle
+I highly appreciate your contributions to this project in any amount possible. Kudle is still at an very basic stage. Suggestions on additional features and functionality are welcome. General instructions on how to contribute are mentioned in [CONTRIBUTING](CONTRIBUTING.md)
+
+## Getting help
+Please use the issues tracker of this repository to report on any bugs or questions you have.
