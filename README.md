@@ -52,3 +52,7 @@ I highly appreciate your contributions to this project in any amount possible. K
 
 ## Getting help
 Please use the issues tracker of this repository to report on any bugs or questions you have.
+
+## Upcoming features
+
+- Updating and scaling of running apps
