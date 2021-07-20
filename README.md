@@ -10,3 +10,11 @@ Here's a quick look :eyes:
 
 <!-- ![](images/gif_capture.gif) -->
 <img src="images/gif_capture.gif" alt="gifcapture" width="500">
+
+## Installation
+
+- Clone this repo
+- Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+- Next install `kubectl` using command `az aks install-cli`
+- Set up a python environment with `python >= 3.6`
+- Install python dependecies using command `pip install -r requirements.txt`
