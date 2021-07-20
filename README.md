@@ -1,10 +1,11 @@
 <img src="images/logo2.png" alt="Projectlogo" width="200">
 
+![](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/miranthajayatilake/kudle/blob/main/LICENSE)
 
 # Hello there :wave: Welcome to kudle 
 
-**kudle** is an application that helps you deploy docker containers directly on your [Azure Kubernetes Clusters](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) via a graphical user interface in 5 mins! Kudle can be described in just two words, simple and fast :bulb: 
+**kudle** is an application that helps you deploy docker containers easily on your [Azure Kubernetes Services](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) via a graphical user interface in 5 mins! Kudle can be described in just two words, simple and fast :bulb: 
 
 Here's a quick look :eyes: 
 
