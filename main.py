@@ -79,6 +79,9 @@ with st.beta_expander("New Deployment"):
 
     aksname = st.text_input('Kubernetes cluster name', '')
     aks_createnew = st.checkbox('Create new', key='aks_createnew')
+    if aks_createnew:
+        node_number = st.text_input('Number of nodes', '')
+        # replica_number = st.text_input('Number of replicas', '')
 
     if st.button('Deploy'):
         my_bar = st.progress(0)
@@ -131,7 +134,7 @@ with st.beta_expander("New Deployment"):
             run_command('az aks create' +
                         ' --resource-group ' + resourcegroup +
                         ' --name ' + aksname +
-                        ' --node-count 2' +
+                        ' --node-count ' + node_number +
                         ' --generate-ssh-keys' +
                         ' --attach-acr ' + acrname)
         my_bar.progress(60)
