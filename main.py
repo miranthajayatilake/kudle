@@ -23,20 +23,25 @@ def run_command_login(args):
     output = subprocess.getoutput(args)
     # st.info(output)
     with placeholder3.beta_container():
-        st.write(str(output))
+        st.text(str(output))
 
 
 def run_command_getip(args):
     # st.info(f"Running '{' '.join(args)}'")
     output = subprocess.getoutput(args)
     # st.info(output)
-    output_mod = output.split(' ')
-    # index_ = output_mod.index('AGE\napi-app')
-    # df = pd.DataFrame(columns=['App Name', 'Public IP'])
-    # df.loc[0] = [output_mod[36].split('\n')[1]] + [output_mod[48]]
-    with placeholder4.beta_container():
-        st.write(str(output_mod))
-        # st.write(output)
+    try:
+        output_mod = output.split(' ')
+        # index_ = output_mod.index('AGE\napi-app')
+        # df = pd.DataFrame(columns=['App Name', 'Public IP'])
+        # df.loc[0] = [output_mod[36].split('\n')[1]] + [output_mod[48]]
+        with placeholder4.beta_container():
+            # st.write(output_mod[46])
+            st.text(output)
+            # st.table(df)
+    except:
+        with placeholder4.beta_container():
+            st.write('Sorry, no data')
 
 
 def run_command(args):
@@ -44,7 +49,7 @@ def run_command(args):
     output = subprocess.getoutput(args)
     # st.info(output)
     with placeholder2.beta_container():
-        st.write(str(output))
+        st.text(str(output))
 
 
 if st.button('Login to your azure account'):
@@ -102,7 +107,7 @@ with st.beta_expander("New Deployment"):
             st.write('Successfully logged into Container Registry')
         my_bar.progress(20)
 
-        # Docker image
+        # Docker image handling
         with placeholder.beta_container():
             st.write('Tagging docker image')
         run_command('docker tag ' + docker_image + ' ' +
@@ -118,6 +123,7 @@ with st.beta_expander("New Deployment"):
         with placeholder.beta_container():
             st.write('Docker image pushed to Container Registry')
         my_bar.progress(50)
+
         # AKS creation and login
         if aks_createnew:
             with placeholder.beta_container():
@@ -153,7 +159,7 @@ with st.beta_expander("New Deployment"):
         my_bar.progress(100)
 
 with st.beta_expander("Check deployment status"):
-    # dep_name2 = st.text_input('Deployment name', '')
+    dep_name2 = st.text_input('Deployment name (Can be same as above)', '')
     if st.button('Get public IP'):
         placeholder4 = st.empty()
-        run_command_getip('kubectl get service '+dep_name)
+        run_command_getip('kubectl get service '+dep_name2)
