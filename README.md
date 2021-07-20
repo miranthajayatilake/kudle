@@ -35,7 +35,14 @@ Here's a quick look :eyes:
     - Your Docker image name 
     - Name you want to give your deployment (can be anything)
     - Version number for your deployment
+
 **Azure Configuration Inputs**
 - A [Resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) name (:ballot_box_with_check: if need to create new)
 - A [Container registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-intro) name (:ballot_box_with_check: if need to create new)
 - A [Kubernetes cluster](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) name ((:ballot_box_with_check: if need to create new))
+
+All good! Hit **Deploy** :relieved:
+*Information on the status will be displyed below the progress bar*
+
+When completed, expand **Check deployment status** section and hit **Get public IP**
+If deployed successfully, the public IP for your app will be displayed :clap: :clap: :clap:
