@@ -35,8 +35,8 @@ def run_command_getip(args):
     # df = pd.DataFrame(columns=['App Name', 'Public IP'])
     # df.loc[0] = [output_mod[36].split('\n')[1]] + [output_mod[48]]
     with placeholder4.beta_container():
-        # st.write(str(output_mod))
-        st.write(output)
+        st.write(str(output_mod))
+        # st.write(output)
 
 
 def run_command(args):
